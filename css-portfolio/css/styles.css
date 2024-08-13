@@ -64,34 +64,87 @@ h2{
     color: black;
 }
 
+.education h3 + p {
+    font-style: italic;
+}
+
+.education h3 ~ p {
+    margin: 0;
+}
+
 /*------------------------------------------------------
     WORK EXPERIENCE
 ------------------------------------------------------*/
 .work-experience{
     background-color: darkolivegreen;
 }
+
 .job-item{
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: 20px;
 }
 
+.job-details h3 + p {
+    font-style: italic;
+}
+
+.job-details h3 ~ p {
+    margin: 0;
+}
+
 /*------------------------------------------------------
     PROJECTS
 ------------------------------------------------------*/
 .projects{
-    background-color: brown;
+    background-color: black;
 }
 
 /*------------------------------------------------------
     CONTACT INFO
 ------------------------------------------------------*/
 footer{
-    background-color: rgb(94, 167, 204);
-    /* color: black; */
+    background-color: goldenrod;
+    color: black;
 }
 .contact-list{
     list-style-type: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.contact-list a:visited{
+    text-decoration: none;
+    text-decoration-color: none;
+}
+
+/*------------------------------------------------------
+    RESPONSIVE
+------------------------------------------------------*/
+/* @media screen and (min-width:750px){
+
+} */
+
+@media screen and (max-width: 749px){
+    .profile h1 {
+        text-align: left;
+    }
+
+    .content-wrap h2 {
+        text-align: left;
+    }
+
+    .content-wrap {
+        width: 100vw;
+    }
+
+    .job-item, .contact-list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-list img{
+        width: 24px;
+        height: 24px;
+    }
 }
