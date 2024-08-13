@@ -70,6 +70,11 @@ h2{
 .work-experience{
     background-color: darkolivegreen;
 }
+.job-item{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+}
 
 /*------------------------------------------------------
     PROJECTS
@@ -84,4 +89,9 @@ h2{
 footer{
     background-color: rgb(94, 167, 204);
     /* color: black; */
+}
+.contact-list{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
